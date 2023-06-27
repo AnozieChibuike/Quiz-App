@@ -10,6 +10,30 @@ def index():
         return redirect('/quiz')
     return render_template('index.html')
 
+quiz_data = {
+    'questions': [
+        {
+            'question': 'What is the resitivity of a cylindrical material wire whose 1m length has a resistance of 2ohms? The diameter of a wire is 0.5m',
+            'options': ['3.97 x 10⁻⁷','3.93 x 10⁻⁷','3.93 x 10⁻⁶','3.93'],
+            'answer': '3.93 x 10⁻⁷',
+        },
+        {
+            'question': 'Find the resistance of a wire of length 0.64m,radius 0.2mm and resistivity 3 x 10-6 ',
+            'options': ['15 ohms','15.5 ohms','1.5 ohms','50 ohms']
+            'answer': '15.5 ohms',
+        },
+        {
+            'question': 'According to ohm’s law, the ratio V/I is constant for',
+            'options': ['an electrolyte', 'a diode', 'transistor', 'silver'],
+            'answer': 'silver',
+        },
+        {
+            'question': '
+
+
+
+
+
 @app.route('/quiz',methods=["POST","GET"])
 def quiz():
     name = session.pop('name',None)
