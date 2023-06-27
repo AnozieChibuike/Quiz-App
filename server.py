@@ -37,6 +37,7 @@ quiz_data = {
             'options': ['Kinetic energy', 'Potential difference', 'Electromotive force', 'Electrical energy'],
             'answer': 'Electromotive force',               
         },
+        ]}
         
             
 
