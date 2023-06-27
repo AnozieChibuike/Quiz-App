@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to the Quiz!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS styles for responsiveness */
+    /* ... (your preferred styles) ... */
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Quiz!</h1>
+  <p>Ready to test your knowledge, {{ request.form.name }}? Please answer the following questions:</p>
+
+  <form method="POST">
+    <input type="hidden" name="name" value="{{ request.form.name }}">
+    {% for question in quiz_data.questions %}
+      <h2>Question {{ loop.index }}</h2>
+      <p>{{ question.question }}</p>
+      {% for option in question.options %}
+        <label>
+          <input type="radio" name="answer{{ loop.parent.loop.index }}" value="{{ option }}" required>
+          {{ option }}
+        </label>
+      {% endfor %}
+    {% endfor %}
+    <br><br>
+    <input type="submit" value="Submit Quiz">
+  </form>
+</body>
+</html>
+
