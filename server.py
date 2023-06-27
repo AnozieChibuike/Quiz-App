@@ -15,5 +15,4 @@ def quiz():
     name = session.pop('name',None)
     if request.method == "POST":
         pass
-    return name
     return render_template('quiz.html',name=name)
