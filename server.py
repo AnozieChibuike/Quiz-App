@@ -19,7 +19,7 @@ quiz_data = {
         },
         {
             'question': 'Find the resistance of a wire of length 0.64m,radius 0.2mm and resistivity 3 x 10-6 ',
-            'options': ['15 ohms','15.5 ohms','1.5 ohms','50 ohms']
+            'options': ['15 ohms','15.5 ohms','1.5 ohms','50 ohms'],
             'answer': '15.5 ohms',
         },
         {
