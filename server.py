@@ -28,7 +28,17 @@ quiz_data = {
             'answer': 'silver',
         },
         {
-            'question': '
+            'question': 'Which of the following is NOT an effect​ that can be produced by an electric current',
+            'options': ['Heat', 'Light', 'Sound', 'None of these'],
+            'answer': 'None of these',
+        },
+        {
+            'question': 'The total energy required to send a unit positive charge round a complete electrical circuit is the',
+            'options': ['Kinetic energy', 'Potential difference', 'Electromotive force', 'Electrical energy'],
+            'answer': 'Electromotive force',               
+        },
+        
+            
 
 
 
