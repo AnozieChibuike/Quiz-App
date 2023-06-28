@@ -37,6 +37,16 @@ quiz_data = {
             'options': ['Kinetic energy', 'Potential difference', 'Electromotive force', 'Electrical energy'],
             'answer': 'Electromotive force',               
         },
+        {
+            'question': 'Which of the following obey ohm’s law ?',
+            'options': ['Glass','Diode', 'All electrolytes', 'All metals'],
+            'answer': 'All metals',
+        },
+        {
+            'question': 'When a charge moves through an electric circuit in the direction of an electric force',
+            'options': ['gains both potential and kinetic energy.', 'gains potential energy and loses kinetic energy', 'Loses potential energy and gains kinetic energy', 'Loses both potential and kinetic energy']
+            'answer': 'Loses potential energy and gains kinetic energy',
+        }
     ]
 }
         
