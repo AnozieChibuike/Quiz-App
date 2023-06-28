@@ -50,6 +50,15 @@ quiz_data = {
 def quiz():
     name = session.pop('name',None)
     if request.method == "POST":
-        return str(request.form['answer1'] == quiz_data['questions'][0]['answer'])
+        li = []
+        correct = 0
+        for key, value in request.form:
+            li.append(value)
+        for i, question in enumerate(quiz_data['questions']):
+            select = li[i]
+            correct = question['answer']
+            if select == correct:
+                correct += 1
+        return correct
         
     return render_template('quiz.html',name=name,quiz_data=quiz_data)
