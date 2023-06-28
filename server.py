@@ -46,7 +46,23 @@ quiz_data = {
             'question': 'When a charge moves through an electric circuit in the direction of an electric force',
             'options': ['gains both potential and kinetic energy.', 'gains potential energy and loses kinetic energy', 'Loses potential energy and gains kinetic energy', 'Loses both potential and kinetic energy'],
             'answer': 'Loses potential energy and gains kinetic energy',
+        },
+        {
+            'question': 'An electric cell has an internal resistance of 2ohms. A current of 0.5A is found to flow when a resistor of 5ohms resistance is connected across it . What is the electromotive force of the cell ?',
+            'options': ['5 volts', '3.5 volts', '2.5 volts', '10 volts'],
+            'answer': '10 volts',
+        },
+        {
+            'question': 'All of these obey ohms law except',
+            'options': ['Transistor', 'Resistors', 'Rectifiers', 'Insulators'],
+            'answer': 'Insulators',
+        },
+        {
+            'question': 'The unit of current is',
+            'options': ['Ampere','Volts','Ohms','Joules'],
+            'answer': 'Ampere',
         }
+        
     ]
 }
         
