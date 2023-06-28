@@ -52,13 +52,15 @@ def quiz():
     if request.method == "POST":
         li = []
         score = 0
+        quest = 0
         for key, value in request.form.items():
             li.append(value)
+            quest += 1
         for i, question in enumerate(quiz_data['questions']):
             select = li[i]
             correct = question['answer']
             if select == correct:
                 score += 1
-        return render_template('result.html',name=name,result=result)
+        return render_template('result.html',name=name,score=score,total_questions=quest)
         
     return render_template('quiz.html',name=name,quiz_data=quiz_data)
