@@ -4,39 +4,86 @@
   <title>Welcome to the Quiz!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* CSS styles for responsiveness */
-    /* ... (your preferred styles) ... */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: inline-block;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      max-width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to the Quiz!</h1>
-  <p>Ready to test your knowledge, {{ name }} Please answer the following questions:</p>
+  <p>Ready to test your knowledge, {{ name }}? Please answer the following questions:</p>
 
   <form method="POST">
     <input type="hidden" name="name" value="{{ name }}">
     {% for question in quiz_data.questions %}
       <h2>Question {{ loop.index }}</h2>
       <p>{{ question.question }}</p>
-        <label>
-          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[0] }}" required>
+      <label>
+        <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[0] }}" required>
         {{ question.options[0] }}
-        </label>
-        <label>
-          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[1] }}" required>
+      </label>
+      <label>
+        <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[1] }}" required>
         {{ question.options[1] }}
-        </label>
-        <label>
-          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[2] }}" required>
+      </label>
+      <label>
+        <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[2] }}" required>
         {{ question.options[2] }}
-        </label>
-        <label>
-          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[3] }}" required>
+      </label>
+      <label>
+        <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[3] }}" required>
         {{ question.options[3] }}
-        </label>
+      </label>
     {% endfor %}
     <br><br>
     <input type="submit" value="Submit Quiz">
   </form>
 </body>
 </html>
-
