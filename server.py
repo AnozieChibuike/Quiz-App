@@ -50,6 +50,6 @@ quiz_data = {
 def quiz():
     name = session.pop('name',None)
     if request.method == "POST":
-        return request.form
+        return request.form['answer1'] == quiz_data['questions'][0]['answer']
         
     return render_template('quiz.html',name=name,quiz_data=quiz_data)
