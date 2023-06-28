@@ -52,7 +52,7 @@ def quiz():
     if request.method == "POST":
         li = []
         correct = 0
-        for key, value in request.form:
+        for key, value in request.form.items():
             li.append(value)
         for i, question in enumerate(quiz_data['questions']):
             select = li[i]
