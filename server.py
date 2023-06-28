@@ -102,12 +102,16 @@ quiz_data = {
             'options': ['Polarization', 'Thermometer', 'Local action', 'Amalgamation'],
             'answer': 'Local action',
         },
-            
-            
-        
-            
-            
-        
+        {
+            'question': 'A cell of emf of 2V and internal resistance 1ohm supplies a current of 0.5A to a resistance whose value is ',
+            'options': ['0.5W', '1W', '2.5W', '3W'],
+            'answer': '3W',
+        },
+        {
+            'question': 'A 24V potential difference is applied across a parallel combination of four 6 ohm resistors. The current in each resistor is',
+            'options': ['1A', '4A', '16A', '18A'],
+            'answer': '4A',
+        }
     ]
 }
         
