@@ -51,14 +51,14 @@ def quiz():
     name = session.pop('name',None)
     if request.method == "POST":
         li = []
-        correct = 0
+        score = 0
         for key, value in request.form.items():
             li.append(value)
         for i, question in enumerate(quiz_data['questions']):
             select = li[i]
             correct = question['answer']
             if select == correct:
-                correct += 1
-        return correct
+                score += 1
+        return f'{score}/5'
         
     return render_template('quiz.html',name=name,quiz_data=quiz_data)
