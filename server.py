@@ -76,7 +76,36 @@ quiz_data = {
             'question': 'The pd between the terminals of a cell when it is not delivering any current in an external circuit (or when it is in an open circuit)',
             'options': ['Resistance', 'Emf', 'Electricity', 'Potential difference'],
             'answer': 'Emf',
-        }
+        },
+        {
+            'question': 'The unit of potential difference is'
+            'options': ['Volt', 'Ampere', 'Coulomb', 'Ohms'],
+            'answer': 'Volt',
+        },
+        {
+            'question': 'The formation of hydrogen gas bubbles around the copper plate of the simple cell is ',
+            'options': ['Depolarization', 'Polarization', 'Local action', 'Electrolyte'],
+            'answer': 'Polarization',
+        },
+        {
+            'question': 'Polarization of cells can be reduced or prevented by adding',
+            'options': ['Sulphur oxide', 'Carbon (IV) oxide', 'Manganese di oxide', 'Helium'],
+            'answer': 'Manganese di oxide',
+        },
+        {
+            'question': 'Local action can be prevented by the process of',
+            'options': ['Polarization', 'Depolarization', 'Amalgamation', 'Electricity'],
+            'answer': 'Amalgamation',
+        },
+        {
+            'question': 'What is caused due to impurities in the zinc plate \n A. Polarization ',
+            'options': ['Polarization', 'Thermometer', 'Local action', 'Amalgamation'],
+            'answer': 'Local action',
+        },
+            
+            
+        
+            
             
         
     ]
