@@ -93,8 +93,13 @@
       <div class="score-label">Incorrect Answers:</div>
       <div class="score-value">{{ incorrect_answers }}</div>
     </div>-->
-    <button class="restart-button" onclick="href='/quiz';">Restart</button>
+    <button class="restart-button" onclick="restart()">Restart</button>
   </div>
+  <script>
+  function restart() {
+        window.location.href = "/quiz";
+    }
+</script>
 </body>
 </html>
 
