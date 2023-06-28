@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .result-container {
+      display: inline-block;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      max-width: 100%;
+    }
+
+    .result-heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .result-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .score {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .score-details {
+      margin-top: 30px;
+    }
+
+    .score-label {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .score-value {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz Result</h1>
+
+  <div class="result-container">
+    <div class="result-heading">Congratulations, {{ name }}!</div>
+    <div class="result-text">You have completed the quiz.</div>
+    <div class="score">
+      Your Score: {{ score }} / {{ total_questions }}
+    </div>
+    <div class="score-details">
+      <div class="score-label">Correct Answers:</div>
+      <div class="score-value">{{ correct_answers }}</div>
+      <div class="score-label">Incorrect Answers:</div>
+      <div class="score-value">{{ incorrect_answers }}</div>
+    </div>
+  </div>
+</body>
+</html>
+
