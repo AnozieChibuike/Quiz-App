@@ -71,7 +71,13 @@ quiz_data = {
             'question': 'The unit of resistance is',
             'options': ['Ohms', 'Ampere', 'Volts', 'Current'],
             'answer': 'Ohms',
+        },
+        {
+            'question': 'The pd between the terminals of a cell when it is not delivering any current in an external circuit (or when it is in an open circuit)',
+            'options': ['Resistance', 'Emf', 'Electricity', 'Potential difference'],
+            'answer': 'Emf',
         }
+            
         
     ]
 }
