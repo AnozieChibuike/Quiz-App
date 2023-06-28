@@ -48,7 +48,7 @@ quiz_data = {
 
 @app.route('/quiz',methods=["POST","GET"])
 def quiz():
-    name = session.pop('name',None)
+    name = session['name']
     if request.method == "POST":
         li = []
         score = 0
