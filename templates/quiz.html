@@ -17,10 +17,21 @@
     {% for question in quiz_data.questions %}
       <h2>Question {{ loop.index }}</h2>
       <p>{{ question.question }}</p>
-      {% for option in question.options %}
         <label>
-          <input type="radio" name="answer{{ loop.index }}" value="{{ option }}" required>
-          {{ option }}
+          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[0] }}" required>
+        {{ question.options[0] }}
+        </label>
+        <label>
+          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[1] }}" required>
+        {{ question.options[1] }}
+        </label>
+        <label>
+          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[2] }}" required>
+        {{ question.options[2] }}
+        </label>
+        <label>
+          <input type="radio" name="answer{{ loop.index }}" value="{{ question.options[3] }}" required>
+        {{ question.options[3] }}
         </label>
       {% endfor %}
     {% endfor %}
