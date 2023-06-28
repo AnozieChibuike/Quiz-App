@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
   <title>Quiz Result</title>
@@ -64,6 +63,18 @@
 
     .restart-button {
       margin-top: 30px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .restart-button:hover {
+      background-color: #555;
     }
   </style>
 </head>
@@ -81,10 +92,11 @@
       <div class="score-value">{{ correct_answers }}</div>
       <div class="score-label">Incorrect Answers:</div>
       <div class="score-value">{{ incorrect_answers }}</div>
-    </div> -->
-    <button class="restart-button" onclick="location.href='quiz.html';">Restart</button>
+    </div>-->
+    <button class="restart-button" onclick="href='/quiz';">Restart</button>
   </div>
 </body>
 </html>
+
 
 
