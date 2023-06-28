@@ -78,7 +78,7 @@ quiz_data = {
             'answer': 'Emf',
         },
         {
-            'question': 'The unit of potential difference is'
+            'question': 'The unit of potential difference is',
             'options': ['Volt', 'Ampere', 'Coulomb', 'Ohms'],
             'answer': 'Volt',
         },
