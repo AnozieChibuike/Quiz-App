@@ -59,6 +59,6 @@ def quiz():
             correct = question['answer']
             if select == correct:
                 score += 1
-        return f'{score}/5'
+        return render_template('result.html',name=name,result=result)
         
     return render_template('quiz.html',name=name,quiz_data=quiz_data)
