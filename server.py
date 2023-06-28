@@ -61,6 +61,16 @@ quiz_data = {
             'question': 'The unit of current is',
             'options': ['Ampere','Volts','Ohms','Joules'],
             'answer': 'Ampere',
+        },
+        {
+            'question': 'The opposition to the flow of charges (electrons) or current is',
+            'options': ['Insulator', 'Resistance', 'Ammeter', 'Emf'],
+            'answer': 'Resistance',
+        },
+        {
+            'question': 'The unit of resistance is',
+            'options': ['Ohms', 'Ampere', 'Volts', 'Current'],
+            'answer': 'Ohms',
         }
         
     ]
