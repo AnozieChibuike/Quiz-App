@@ -44,7 +44,7 @@ quiz_data = {
         },
         {
             'question': 'When a charge moves through an electric circuit in the direction of an electric force',
-            'options': ['gains both potential and kinetic energy.', 'gains potential energy and loses kinetic energy', 'Loses potential energy and gains kinetic energy', 'Loses both potential and kinetic energy']
+            'options': ['gains both potential and kinetic energy.', 'gains potential energy and loses kinetic energy', 'Loses potential energy and gains kinetic energy', 'Loses both potential and kinetic energy'],
             'answer': 'Loses potential energy and gains kinetic energy',
         }
     ]
