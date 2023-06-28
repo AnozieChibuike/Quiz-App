@@ -63,7 +63,6 @@
   <p>Ready to test your knowledge, {{ name }}? Please answer the following questions:</p>
 
   <form method="POST">
-    <input type="hidden" name="name" value="{{ name }}">
     {% for question in quiz_data.questions %}
       <h2>Question {{ loop.index }}</h2>
       <p>{{ question.question }}</p>
