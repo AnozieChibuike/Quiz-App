@@ -19,7 +19,7 @@
       <p>{{ question.question }}</p>
       {% for option in question.options %}
         <label>
-          <input type="radio" name="answer{{ loop.parent.loop.index }}" value="{{ option }}" required>
+          <input type="radio" name="answer{{ loop.parent.index + 1 }}" value="{{ option }}" required>
           {{ option }}
         </label>
       {% endfor %}
