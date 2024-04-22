@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../pathway_to_gold"
+    },
+    {
+      "path": "frontend/QuizApp"
+    }
+  ],
+  "settings": {}
+}
