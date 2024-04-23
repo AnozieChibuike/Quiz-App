@@ -1,5 +1,6 @@
-from app import app, db
+# Entry file
 
+from app import app, db
 from app.models.user import User
 
 @app.shell_context_processor

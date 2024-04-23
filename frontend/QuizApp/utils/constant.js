@@ -1,3 +1,4 @@
-const constants = {};
+const constants = {
+};
 
 export default constants;
